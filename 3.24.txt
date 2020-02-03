@@ -1,0 +1,20 @@
+// HW-2 Question 3.24
+
+import java.util.Random;
+
+public class Main {
+public static void main(String[] args) {
+
+        Random rand = new Random();
+
+        int cardRank = rand.nextInt(13);
+        int cardSuit = rand.nextInt(4);
+
+        String[] card = {"Ace", "1", "2", "3", "4", "5", "6", "7", "8", "9", "Jack", "Queen", "King"};
+        String[] suit = {"Clubs", "Diamonds", "Hearts", "Spades"};
+
+        System.out.println("The card you picked is " + card[cardRank] + " of " + suit[cardSuit]);
+
+    }
+
+}
